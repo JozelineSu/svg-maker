@@ -1,11 +1,19 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const Circle = require('./lib/circle');
+const Triangle= require('./lib/triangle');
+const Square = require('./lib/square');
 
 function makeSVG(answer) {
     if (answer.shape === 'Circle') {
-        let svg = new Circle (answer.shapeColor, answer.text, answer.textColor)
-        return svg.render()
+        let svg = new Circle (answer.shapeColor, answer.text, answer.textColor);
+        return svg.render();
+    } else if (answer.shape === 'Triangle') {
+        let svg = new Triangle (answer.shapeColor, answer.text, answer.textColor);
+        return svg.render();
+    } else if (answer.shape === 'Square') {
+        let svg = new Square (answer.shapeColor, answer.text, answer.textColor);
+        return svg.render();
     }
 }
 
