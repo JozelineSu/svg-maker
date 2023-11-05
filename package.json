@@ -1,7 +1,21 @@
-{
-  "scripts": {"test": "jest"},
+{"name": "svg-maker",
+"version": "1.0.0",
+"description": "An svg logo maker. Create a quick, easy, and customizable logo",
+"main": "index.js",
+"directories": {
+  "lib": "lib"
+},
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
   "dependencies": {
-    "jest": "^29.7.0",
     "inquirer": "^8.2.4"
+  },
+  "devDependencies": {
+    "jest": "^29.5.3"
   }
 }
